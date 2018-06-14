@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>用户列表</title>
+    <link rel="stylesheet" href="${WEBROOT}/public/layui/css/layui.css" media="all">
+</head>
+<body class="layui-layout-body">
+#include("../common/header.jetx")
+#include("../common/left.jetx")
+<div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+
+        <fieldset class="layui-elem-field layui-field-title site-title">
+            <legend><a name="grid">用户列表</a></legend>
+        </fieldset>
+
+        <div class="layui-main site-inline site-fix">
+            <table class="layui-table">
+                <colgroup>
+                    <col width="150">
+                    <col width="200">
+                    <col>
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>密码</th>
+                    <th>备注</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                #for(User user:userList)
+                <tr>
+                    <td>${for.index}</td>
+                    <td>${user.name}</td>
+                    <td>${user.sex}</td>
+                    <td>${user.password}</td>
+                    <td>${user.desc}</td>
+                    <td>
+                        <a href="${WEBROOT}/user/modifyUserById/${user.id}">
+                            <button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-normal">修改</button>
+                        </a>
+                        <a href="${WEBROOT}/user/removeUserById/${user.id}">
+                            <button class="layui-btn layui-btn-sm layui-btn-radius layui-btn-danger">删除</button>
+                        </a>
+                    </td>
+                </tr>
+                #end
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+#include("../common/footer.jetx")
+
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
+</body>
+</html>

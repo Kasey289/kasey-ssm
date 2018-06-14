@@ -1,0 +1,19 @@
+2018-06-04 13:50:29.382 [main] INFO  org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-06-04 13:50:29.417 [main] INFO  org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@76329302, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5e25a92e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4df828d7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@b59d31, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62fdb4a6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@11e21d0e]
+2018-06-04 13:50:29.579 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-06-04 13:50:29.948 [main] INFO  org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@145eaa29: startup date [Mon Jun 04 13:50:29 CST 2018]; root of context hierarchy
+2018-06-04 13:50:30.183 [main] INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-06-04 13:50:31.738 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2018-06-04 13:50:31.845 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=1, name=zhangsan, sex=男, password=123456, desc=呆萌)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=2, name=lisi, sex=女, password=123456, desc=古灵精怪)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=3, name=asd, sex=男, password=asd, desc=sasa00)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=20, name=212, sex=女, password=2121, desc=212121)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=21, name=21, sex=女, password=2121, desc=2121)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=22, name=21, sex=女, password=2212, desc=12121)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=23, name=21, sex=女, password=2212, desc=12121)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=24, name=21, sex=女, password=2212, desc=12121)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=25, name=212, sex=女, password=212, desc=2121)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=42, name=撒飒飒, sex=女, password=sasasas, desc=撒飒飒)
+2018-06-04 13:50:31.847 [main] INFO  com.kasey.ssm.dao.IUserMapperTest - 查询结果是:User(id=43, name=飒飒, sex=女, password=sasa, desc=撒飒飒)
+2018-06-04 13:50:31.850 [Thread-1] INFO  org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@145eaa29: startup date [Mon Jun 04 13:50:29 CST 2018]; root of context hierarchy
+2018-06-04 13:50:31.855 [Thread-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

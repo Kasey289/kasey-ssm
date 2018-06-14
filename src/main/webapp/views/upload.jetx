@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>主页</title>
+    <link rel="stylesheet" href="${WEBROOT}/public/layui/css/layui.css" media="all">
+</head>
+<body class="layui-layout-body">
+#include("../common/header.jetx")
+#include("../common/left.jetx")
+<div class="layui-body">
+    <!-- 内容主体区域 -->k
+    <div style="padding: 15px;">
+        <h2>多文件上传（也可以单个，扩展性比较好）</h2>
+
+        <!-- 文件上传务必加上： enctype="multipart/form-data" -->
+        <form action="${WEBROOT}/file/upload" enctype="multipart/form-data" method="post">
+
+            <!-- 设置后可上传多个文件： multiple="multiple"-->
+            <input type="file" name="images" multiple="multiple">
+            <input type="submit" value="上传">
+        </form>
+        <hr class="layui-bg-orange" />
+
+        <h2>单个文件上传</h2>
+        <h3 style="color: red; ">${error}</h3>
+        <form action="${WEBROOT}/file/oneUpload" enctype="multipart/form-data" method="post">
+            <!-- 设置后可上传多个文件： multiple="multiple"-->
+            <input type="file" name="mfile" multiple="multiple">
+            <input type="submit" value="上传">
+        </form>
+        <img src="${WEBROOT}/${url}" width="50%" height="50%" alt="">
+    </div>
+</div>
+#include("../common/footer.jetx")
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+</script>
+</body>
+</html>
